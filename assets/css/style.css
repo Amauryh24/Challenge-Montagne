@@ -1,0 +1,52 @@
+
+
+@media screen and (max-width: 768px) {
+	.banner.style1 {
+		width: 100%;
+		flex-direction: column-reverse; /* Pour inverser l'ordre Image-content*/
+		text-align: center;
+	}
+	.banner.style1 .content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 2rem;
+		width: 100%;
+		max-width: 100%;
+	}
+	.banner.style1 .content h1 {
+		font-size: 55px;
+	}
+	.banner.style1 .content p.major {
+		font-size: 20px;
+	}
+	.banner.style1 .content ul.actions.stacked .button {
+		font-size: 14px;
+	}
+	.banner.style1 .image {
+		width: 100%;
+		height: 45vh;
+	}
+
+	// Redéfinir la largeur des colonnes Image et Content
+	.spotlight.style1 .content {
+	    padding: 1.5rem;
+	    width: 50%;
+	    min-width: 0;
+	}
+	.spotlight.style1 .content h2 {
+		font-size: 35px;
+	}
+	.spotlight.style1 .content p {
+		font-size: 16px;
+	}
+	.spotlight.style1 .image {
+	    width: 50%;
+	    min-width: 0;
+	    height: 50vh;
+	}
+	.spotlight.style1 ul.actions.stacked .button {
+		font-size: 14px;
+	}
+
+}
