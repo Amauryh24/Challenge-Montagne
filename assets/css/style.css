@@ -38,6 +38,7 @@
     text-align: justify;
     font-size: 0.6rem;
   }
+
   h1 {
     text-align: center;
     font-size: 2rem;
@@ -52,6 +53,10 @@
   }
   p.major {
     font-size: 0.7rem;
+    text-align: center;
+  }
+
+  #wrapper section:first-child .content ul {
     text-align: center;
   }
   .spotlight.style1 {
@@ -111,5 +116,75 @@
   h3 {
     font-size: 1rem;
     color: #a0a0a0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .spotlight.style1.orient-right {
+    flex-direction: column-reverse;
+  }
+  .spotlight.style1 {
+    flex-direction: column-reverse;
+  }
+  .spotlight.style1 .image,
+  .spotlight.style1 .content {
+    width: 100%;
+  }
+
+  .spotlight.style1 {
+    justify-content: unset;
+    height: auto;
+    overflow: hidden;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+
+  .content p {
+    text-align: center;
+  }
+  .content ul {
+    text-align: center;
+  }
+  .button {
+    width: 13rem;
+    max-width: initial;
+  }
+  #wrapper section:first-child .content ul li .button {
+    max-width: 7rem;
+  }
+
+  .items.style1.medium > * {
+    padding: 2.1875rem 2.1875rem 0.1875rem 2.1875rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #a0a0a0;
+  }
+
+  .items.style1.medium > *:nth-child(2n) {
+    border-left: none;
+  }
+  p {
+    text-align: center;
+  }
+  form > .fields {
+    flex-direction: column;
+    align-items: center;
+  }
+  form > .fields > .field.half,
+  form > .fields > .field {
+    width: 100%;
+  }
+
+  .special li {
+    width: 100%;
+  }
+
+  .wrapper.style1 > .inner {
+    padding: 1rem 2.2rem 1rem 2.2rem;
   }
 }
